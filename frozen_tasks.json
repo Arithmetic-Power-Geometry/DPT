@@ -1,0 +1,15 @@
+{
+  "schema": "dpt-operational-cheminformatics-v1",
+  "source": "https://github.com/aayambansal/OpenDiscoveryTrace/blob/main/data/task_bank.json",
+  "source_git_blob": "72e28188ff5e2f648f1e477c70443882a534e76e",
+  "selection_rule": "Six easy drug-discovery tasks admitting a deterministic RDKit calculation with a published molecular structure; selected by specified code-compatible endpoint, not answer value. No claim of representative sampling.",
+  "external_structures": "PubChem molecule pages, independently retrieved from benchmark answers; structural inputs are frozen in the fields below.",
+  "tasks": [
+    {"task_id":"dd_e01","compound":"aspirin","cid":2244,"smiles":"CC(=O)Oc1ccccc1C(=O)O","operation":"mw_logp_hbd","benchmark_target":"MW=180.16, LogP=1.24, HBD=1","source_url":"https://pubchem.ncbi.nlm.nih.gov/compound/2244","question":"Retrieve the molecular weight, LogP, and number of hydrogen bond donors for aspirin (acetylsalicylic acid). Report the exact values."},
+    {"task_id":"dd_e02","compound":"ibuprofen","cid":3672,"smiles":"CC(C)CC1=CC=C(C=C1)C(C)C(=O)O","operation":"smiles_tpsa","benchmark_target":"SMILES=CC(C)Cc1ccc(cc1)C(C)C(=O)O, TPSA=37.3","source_url":"https://pubchem.ncbi.nlm.nih.gov/compound/3672","question":"What is the canonical SMILES representation of ibuprofen? Calculate its topological polar surface area (TPSA)."},
+    {"task_id":"dd_e03","compound":"metformin","cid":4091,"smiles":"CN(C)C(=N)N=C(N)N","operation":"lipinski","benchmark_target":"Yes: MW=129.16<500, LogP=-1.43<5, HBD=2<=5, HBA=4<=10","source_url":"https://pubchem.ncbi.nlm.nih.gov/compound/4091","question":"Does metformin satisfy all of Lipinski's Rule of Five criteria? Explain each criterion with the specific values."},
+    {"task_id":"dd_e07","compound":"aspirin","cid":2244,"smiles":"CC(=O)Oc1ccccc1C(=O)O","operation":"pains","benchmark_target":"Aspirin passes PAINS filter - no PAINS alerts","source_url":"https://pubchem.ncbi.nlm.nih.gov/compound/2244","question":"Identify whether the molecule with SMILES 'CC(=O)Oc1ccccc1C(=O)O' passes the PAINS (Pan-Assay Interference Compounds) filter."},
+    {"task_id":"dd_e08","compound":"atorvastatin","cid":60823,"smiles":"CC(C)C1=C(C(=C(N1CC[C@H](C[C@H](CC(=O)O)O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=CC=C4","operation":"rot_formula","benchmark_target":"Rotatable bonds: 12, Formula: C33H35FN2O5","source_url":"https://pubchem.ncbi.nlm.nih.gov/compound/60823","question":"How many rotatable bonds does atorvastatin have? What is its molecular formula?"},
+    {"task_id":"dd_e10","compound":"sorafenib","cid":216239,"smiles":"CNC(=O)C1=NC=CC(=C1)OC2=CC=C(C=C2)NC(=O)NC3=CC(=C(C=C3)Cl)C(F)(F)F","operation":"aromatic_rings","benchmark_target":"4 aromatic rings","source_url":"https://pubchem.ncbi.nlm.nih.gov/compound/216239","question":"Count the number of aromatic rings in the drug molecule sorafenib."}
+  ]
+}

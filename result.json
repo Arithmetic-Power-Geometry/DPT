@@ -1,0 +1,53 @@
+{
+  "schema": "dpt-prospective-rdkit-v1",
+  "python": "3.13.5",
+  "rdkit_version": "2025.09.4",
+  "n_tasks": 6,
+  "n_repetitions_each": 30,
+  "n_traces": 180,
+  "outcomes": {
+    "dd_e01": "partial",
+    "dd_e02": "pass",
+    "dd_e03": "partial",
+    "dd_e07": "pass",
+    "dd_e08": "pass",
+    "dd_e10": "mismatch"
+  },
+  "strict_target_matches": 3,
+  "outputs": {
+    "dd_e01": {
+      "MW": 180.16,
+      "RDKit_LogP": 1.31,
+      "HBD": 1
+    },
+    "dd_e02": {
+      "canonical_SMILES": "CC(C)Cc1ccc(C(C)C(=O)O)cc1",
+      "TPSA": 37.3
+    },
+    "dd_e03": {
+      "MW": 129.17,
+      "RDKit_LogP": -1.244,
+      "HBD": 3,
+      "HBA": 1,
+      "passes_all_thresholds": true
+    },
+    "dd_e07": {
+      "PAINS_alert_count": 0,
+      "passes_PAINS": true
+    },
+    "dd_e08": {
+      "rotatable_bonds": 12,
+      "formula": "C33H35FN2O5"
+    },
+    "dd_e10": {
+      "aromatic_rings": 3
+    }
+  },
+  "limitations": [
+    "Tasks are solutions of prewritten questions, not question discovery",
+    "Operating-time quantiles measure execution jitter, not scientific population variation",
+    "Frozen task-state signed length differences are not DPT QC",
+    "RDKit descriptor implementation and benchmark targets may differ",
+    "Benchmark answer labels are not independently adjudicated historical discovery outcomes"
+  ]
+}

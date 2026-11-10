@@ -1,0 +1,194 @@
+{
+  "n_trajectories": 9,
+  "n_tasks": 3,
+  "n_domains": 1,
+  "n_models": 3,
+  "verified_outcomes": 0,
+  "identified_historical_dc": 0,
+  "identified_historical_qc": 0,
+  "tasks": [
+    "dd_e01",
+    "dd_h01",
+    "dd_m01"
+  ],
+  "models": [
+    "claude-opus-4.6",
+    "gemini-3.1-pro",
+    "gpt-5.4"
+  ],
+  "folds": [
+    {
+      "held_out_task": "dd_e01",
+      "train_n": 6,
+      "test_n": 3,
+      "verified_train_n": 0,
+      "verified_test_n": 0,
+      "predictive_metric": null
+    },
+    {
+      "held_out_task": "dd_h01",
+      "train_n": 6,
+      "test_n": 3,
+      "verified_train_n": 0,
+      "verified_test_n": 0,
+      "predictive_metric": null
+    },
+    {
+      "held_out_task": "dd_m01",
+      "train_n": 6,
+      "test_n": 3,
+      "verified_train_n": 0,
+      "verified_test_n": 0,
+      "predictive_metric": null
+    }
+  ],
+  "model_ranges": {
+    "claude-opus-4.6": {
+      "tokens": [
+        934,
+        11000
+      ],
+      "wall_s": [
+        22.36,
+        297.29
+      ],
+      "signed_prompt_answer_bits": [
+        -4544,
+        -1832
+      ]
+    },
+    "gemini-3.1-pro": {
+      "tokens": [
+        96,
+        312
+      ],
+      "wall_s": [
+        10.84,
+        15.8
+      ],
+      "signed_prompt_answer_bits": [
+        -5256,
+        1200
+      ]
+    },
+    "gpt-5.4": {
+      "tokens": [
+        606,
+        3064
+      ],
+      "wall_s": [
+        9.58,
+        54.55
+      ],
+      "signed_prompt_answer_bits": [
+        -7984,
+        96
+      ]
+    }
+  },
+  "task_ranges": {
+    "dd_e01": {
+      "tokens": [
+        96,
+        934
+      ],
+      "wall_s": [
+        9.58,
+        22.36
+      ],
+      "signed_prompt_answer_bits": [
+        -4544,
+        224
+      ]
+    },
+    "dd_h01": {
+      "tokens": [
+        312,
+        11000
+      ],
+      "wall_s": [
+        15.38,
+        297.29
+      ],
+      "signed_prompt_answer_bits": [
+        -4936,
+        1200
+      ]
+    },
+    "dd_m01": {
+      "tokens": [
+        278,
+        6968
+      ],
+      "wall_s": [
+        15.8,
+        152.64
+      ],
+      "signed_prompt_answer_bits": [
+        -7984,
+        -2344
+      ]
+    }
+  },
+  "paired_descriptive_contrasts": [
+    {
+      "a": "claude-opus-4.6",
+      "b": "gemini-3.1-pro",
+      "token_differences_by_task": [
+        838,
+        10688,
+        6690
+      ],
+      "wall_time_differences_by_task_s": [
+        11.52,
+        281.91,
+        136.84
+      ]
+    },
+    {
+      "a": "claude-opus-4.6",
+      "b": "gpt-5.4",
+      "token_differences_by_task": [
+        328,
+        7936,
+        4266
+      ],
+      "wall_time_differences_by_task_s": [
+        12.78,
+        242.74,
+        108.11
+      ]
+    },
+    {
+      "a": "gemini-3.1-pro",
+      "b": "gpt-5.4",
+      "token_differences_by_task": [
+        -510,
+        -2752,
+        -2424
+      ],
+      "wall_time_differences_by_task_s": [
+        1.26,
+        -39.17,
+        -28.73
+      ]
+    }
+  ],
+  "negative_controls": {
+    "whitespace_20_spaces_raw_length_shift_bits": -160,
+    "outcome_permutation_test": null,
+    "reason": "No independently verified outcome labels; permutation inference undefined",
+    "task_label_permutations": 6,
+    "task_permutations_not_valid_as_outcome_test": true
+  },
+  "comparisons": {
+    "cost_only": "descriptive only",
+    "description_length_only": "descriptive only",
+    "search": "step count is an incomplete proxy",
+    "pareto": "descriptive dominance possible, but no outcome predictive test",
+    "genuine_MDL": "not computable: no fixed model family, likelihood and universal code",
+    "DPT_operational_two_coordinate": "not defined: prompt/answer length is not QC"
+  },
+  "uncertainty": "Observed ranges only; 3 tasks are insufficient for reliable population intervals",
+  "conclusion": "No external predictive construct validity can be estimated"
+}

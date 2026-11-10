@@ -1,0 +1,7 @@
+task_id,utf8_signed_bits,pretty_json_signed_bits,gzip_signed_bits
+dd_e01,-280,-448,-256
+dd_e02,-456,-576,-312
+dd_e03,-592,-856,-472
+dd_e07,-312,-432,-232
+dd_e08,-336,-456,-192
+dd_e10,-128,-200,-40

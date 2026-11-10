@@ -1,0 +1,10 @@
+path,blob,task,model,domain,difficulty,tokens,wall_s,steps,tools,errors,revisions,prompt_bytes,claim_bytes,verification_method,verified_outcome
+data/samples/frontier/dd_e01_claude-opus-4.6.json,cc278b5ea306ea30135be828e3191b172f98a324,dd_e01,claude-opus-4.6,drug_discovery,easy,934,22.36,1,0,0,0,132,700,pending,
+data/samples/frontier/dd_e01_gemini-3.1-pro.json,e6c3083ee40c72dc40d2980ea54417fcd5aef3dd,dd_e01,gemini-3.1-pro,drug_discovery,easy,96,10.84,1,0,0,0,132,104,pending,
+data/samples/frontier/dd_e01_gpt-5.4.json,fa775c570ebc30ac9fdbd79199b59c85667ad4f7,dd_e01,gpt-5.4,drug_discovery,easy,606,9.58,1,0,0,0,132,120,pending,
+data/samples/frontier/dd_h01_claude-opus-4.6.json,acadf7536e14e61007cc2198c05e183b6b035c15,dd_h01,claude-opus-4.6,drug_discovery,hard,11000,297.29,5,4,4,2,271,500,pending,
+data/samples/frontier/dd_h01_gemini-3.1-pro.json,e0601502ae37bbceb667712dc44a1042df4c9903,dd_h01,gemini-3.1-pro,drug_discovery,hard,312,15.38,1,0,0,0,271,121,pending,
+data/samples/frontier/dd_h01_gpt-5.4.json,4008cbe41b7546dd0091de634d12d7b7ec239dfb,dd_h01,gpt-5.4,drug_discovery,hard,3064,54.55,2,1,1,0,271,888,pending,
+data/samples/frontier/dd_m01_claude-opus-4.6.json,5c0dec61754d21831b06e83b6690963f8e874613,dd_m01,claude-opus-4.6,drug_discovery,medium,6968,152.64,3,2,1,2,189,482,pending,
+data/samples/frontier/dd_m01_gemini-3.1-pro.json,13c82ede6b3c03006d809d8caa74f29898112b3b,dd_m01,gemini-3.1-pro,drug_discovery,medium,278,15.8,1,0,0,0,189,846,pending,
+data/samples/frontier/dd_m01_gpt-5.4.json,ed44f77a835aa0d53d932f5743729bb35f934eef,dd_m01,gpt-5.4,drug_discovery,medium,2702,44.53,2,1,0,1,189,1187,pending,
