@@ -1,0 +1,49 @@
+{
+  "sources": [
+    {
+      "key": "Hartley1928",
+      "date": "1928-07",
+      "doi": "10.1002/j.1538-7305.1928.tb01236.x",
+      "pages": "535-563"
+    },
+    {
+      "key": "Shannon1948",
+      "date": "1948-07",
+      "doi": "10.1002/j.1538-7305.1948.tb01338.x",
+      "pages": "379-423"
+    }
+  ],
+  "months_between_publication_months": 240,
+  "is_discovery_cost": false,
+  "historical_DC": null,
+  "historical_QC": null,
+  "six_cost_components": {
+    "evidence_acquisition": null,
+    "experimental_intervention": null,
+    "computational_work": null,
+    "conceptual_transformation": null,
+    "coordination": null,
+    "verification": null
+  },
+  "analyst_artifact_encoding": [
+    {
+      "encoding": "ascii",
+      "before_bytes": 11,
+      "after_bytes": 23,
+      "signed_bits": -96
+    },
+    {
+      "encoding": "latex",
+      "before_bytes": 12,
+      "after_bytes": 24,
+      "signed_bits": -96
+    },
+    {
+      "encoding": "structured",
+      "before_bytes": 86,
+      "after_bytes": 106,
+      "signed_bits": -160
+    }
+  ],
+  "warning": "Analyst formula lengths do not constitute historical DPT QC. Missing historical DC cannot be repaired with zero or arbitrary weights."
+}
