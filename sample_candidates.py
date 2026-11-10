@@ -15,7 +15,7 @@ def select(rows,per_cell=3):
                 if r.get('is_retracted')=='True':continue
                 if not r.get('title') or not r.get('openalex_id'):continue
                 eligible.append(r)
-            eligible.sort(key=lambda r:(hashlib.sha256(('DPT-JOI-P05-v1|'+r['candidate_id']).encode()).hexdigest(),r['candidate_id']))
+            eligible.sort(key=lambda r:(hashlib.sha256(('DPT-JOI–v1|'+r['candidate_id']).encode()).hexdigest(),r['candidate_id']))
             counts[field+'|'+era]={'eligible':len(eligible),'selected':min(per_cell,len(eligible))}
             for r in eligible[:per_cell]:
                 assert r['candidate_id'] not in selected_ids
@@ -23,7 +23,7 @@ def select(rows,per_cell=3):
                 result.append({'candidate_id':r['candidate_id'],'field':field,'era':era,'publication_year':r['publication_year'],'subfield':r.get('subfield',''),'title':r['title'],'doi':r.get('doi',''),'openalex_id':r['openalex_id'],'abstract_available':r.get('abstract_available',''),'screening_status':'UNREVIEWED_METADATA_CANDIDATE','episode_type':'UNDETERMINED','historical_cutoff':'','primary_source_verified':'NO','reconstructable':'UNASSESSED','negative_case':'UNASSESSED','reason':'deterministic SHA256 within field-era; no citation/impact ranking'})
     return result,counts
 def main():
-    p=argparse.ArgumentParser();p.add_argument('zip');p.add_argument('--out',default='P05_candidate_triage.csv');a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('zip');p.add_argument('--out',default='candidate_triage.csv');a=p.parse_args()
     with zipfile.ZipFile(a.zip) as z:
         names=[n for n in z.namelist() if n.endswith('data/processed/discoverybench_candidates_1500.csv')]
         assert len(names)==1
