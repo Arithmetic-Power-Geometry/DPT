@@ -1,0 +1,46 @@
+{
+  "n_records": 9,
+  "n_tasks": 3,
+  "n_domains": 1,
+  "verified_outcomes": 0,
+  "outcome_based_baseline_comparisons": null,
+  "independent_historical_dc": null,
+  "independent_historical_qc": null,
+  "per_task": [
+    {
+      "task": "dd_e01",
+      "models": 3,
+      "pareto_models": [
+        "gemini-3.1-pro",
+        "gpt-5.4"
+      ],
+      "minimum_token_model": "gemini-3.1-pro",
+      "minimum_time_model": "gpt-5.4"
+    },
+    {
+      "task": "dd_h01",
+      "models": 3,
+      "pareto_models": [
+        "gemini-3.1-pro"
+      ],
+      "minimum_token_model": "gemini-3.1-pro",
+      "minimum_time_model": "gemini-3.1-pro"
+    },
+    {
+      "task": "dd_m01",
+      "models": 3,
+      "pareto_models": [
+        "gemini-3.1-pro"
+      ],
+      "minimum_token_model": "gemini-3.1-pro",
+      "minimum_time_model": "gemini-3.1-pro"
+    }
+  ],
+  "negative_controls": {
+    "whitespace_20_spaces_signed_bit_change": -160,
+    "pending_as_failure_is_invalid": true,
+    "task_holdout_folds": 3,
+    "label_permutation_defined": false
+  },
+  "novelty_gate": "not demonstrated: Pareto dominance and rank ordering are standard operations; no independent outcome or coordinate pair"
+}
