@@ -1,0 +1,58 @@
+{
+  "upstream": "https://github.com/aayambansal/OpenDiscoveryTrace",
+  "task_id": "dd_e01",
+  "source_type": "exact fields extracted from three upstream sample JSON records",
+  "records": [
+    {
+      "model": "gpt-5.4",
+      "source_path": "data/samples/frontier/dd_e01_gpt-5.4.json",
+      "source_git_blob": "fa775c570ebc30ac9fdbd79199b59c85667ad4f7",
+      "total_tokens_est": 606,
+      "wall_time_seconds": 9.58,
+      "steps": 1,
+      "tool_calls": 0,
+      "errors": 0,
+      "revisions": 0,
+      "first_timestamp": "2026-04-11T12:25:48.182537Z",
+      "collection_timestamp": "2026-04-11T12:25:57.758850Z",
+      "prompt": "Retrieve the molecular weight, LogP, and number of hydrogen bond donors for aspirin (acetylsalicylic acid). Report the exact values.",
+      "final_claim": "Aspirin (acetylsalicylic acid) has a molecular weight of 180.16 g/mol, a LogP (XLogP) of 1.2, and 1 hydrogen bond donor.",
+      "verification_method": "pending",
+      "verification_result": null
+    },
+    {
+      "model": "claude-opus-4.6",
+      "source_path": "data/samples/frontier/dd_e01_claude-opus-4.6.json",
+      "source_git_blob": "cc278b5ea306ea30135be828e3191b172f98a324",
+      "total_tokens_est": 934,
+      "wall_time_seconds": 22.36,
+      "steps": 1,
+      "tool_calls": 0,
+      "errors": 0,
+      "revisions": 0,
+      "first_timestamp": "2026-04-11T12:46:58.801293Z",
+      "collection_timestamp": "2026-04-11T12:47:21.159813Z",
+      "prompt": "Retrieve the molecular weight, LogP, and number of hydrogen bond donors for aspirin (acetylsalicylic acid). Report the exact values.",
+      "final_claim": "The molecular properties of aspirin (acetylsalicylic acid, C₉H₈O₄, SMILES: CC(=O)Oc1ccccc1C(=O)O) are as follows:\n\n1. **Molecular Weight**: **180.16 g/mol** (average molecular weight)\n2. **LogP**: **1.24** (Wildman-Crippen method via RDKit; PubChem XLogP reports 1.2)\n3. **Number of Hydrogen Bond Donors**: **1** (the carboxylic acid -OH group)\n\nThese values are consistent across RDKit computational chemistry calculations and PubChem database records. The single hydrogen bond donor corresponds to the carboxylic acid hydroxyl group; the ester oxygen does not serve as an H-bond donor. The LogP value of ~1.2 indicates aspirin is slightly lipophilic, consistent with its oral bioavailability.",
+      "verification_method": "pending",
+      "verification_result": null
+    },
+    {
+      "model": "gemini-3.1-pro",
+      "source_path": "data/samples/frontier/dd_e01_gemini-3.1-pro.json",
+      "source_git_blob": "e6c3083ee40c72dc40d2980ea54417fcd5aef3dd",
+      "total_tokens_est": 96,
+      "wall_time_seconds": 10.84,
+      "steps": 1,
+      "tool_calls": 0,
+      "errors": 0,
+      "revisions": 0,
+      "first_timestamp": "2026-04-11T14:28:11.214439Z",
+      "collection_timestamp": "2026-04-11T14:28:22.058872Z",
+      "prompt": "Retrieve the molecular weight, LogP, and number of hydrogen bond donors for aspirin (acetylsalicylic acid). Report the exact values.",
+      "final_claim": "Aspirin has a molecular weight of 180.16 g/mol, a LogP of approximately 1.19, and 1 hydrogen bond donor.",
+      "verification_method": "pending",
+      "verification_result": null
+    }
+  ]
+}
