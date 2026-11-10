@@ -22,7 +22,7 @@ The repository accompanies the formal and methodological study of **Discovery Co
 
 **DiscoveryBench v1.1.0** is archived separately on Zenodo: https://doi.org/10.5281/zenodo.21723918 . Its 1,500 OpenAlex records are *bibliographic screening candidates*, not 1,500 validated discovery episodes. `sample_candidates.py` requires the original archived candidate dataset as input.
 
-The **generated-question proxy benchmark** is a distinct input. The required table is `data/question_coordinates_proxy_1000.csv` inside the separate benchmark ZIP, not within DiscoveryBench. The benchmark ZIP is **not included in this repository**. The proxy-analysis scripts and their tests accept its location through the `DPT_BENCHMARK_ZIP` environment variable. Its proxy scores and rubric outcomes do not establish independently measured historical DC/QC or externally validated predictive performance.
+The **generated-question proxy benchmark** is a distinct input. The required table is `data/question_coordinates_proxy_1000.csv` inside the separate benchmark ZIP, not within DiscoveryBench. The benchmark ZIP is **not included in this repository**. The benchmark package's bibliographic metadata identifies its separate Zenodo record as https://doi.org/10.5281/zenodo.21736251 (public download availability has not been independently verified here). The proxy-analysis scripts and their tests accept the original ZIP location through the `DPT_BENCHMARK_ZIP` environment variable. Its proxy scores and rubric outcomes do not establish independently measured historical DC/QC or externally validated predictive performance.
 
 The **scientific-agent trajectory records** derive from the public OpenDiscoveryTrace sample files and preserve original Git blob identifiers in `records.csv`. Original task-bank source: https://github.com/aayambansal/OpenDiscoveryTrace . Pending upstream verification is not treated as failure or success.
 
@@ -60,7 +60,7 @@ python proxy_validation.py "$DPT_BENCHMARK_ZIP"
 python baselines.py "$DPT_BENCHMARK_ZIP"
 ```
 
-The two archive inputs are different; they must not be substituted for one another.
+The two archive inputs are different; they must not be substituted for one another. The deterministic sampling key used by `sample_candidates.py` is the literal UTF-8 string `DPT-JOI–v1|` (en dash), matching the supplementary protocol.
 
 ## Measurement interpretation
 
@@ -71,3 +71,5 @@ An observed discovery pathway supplies at most an upper bound on a globally defi
 Akhtar, M. A. K., and Nayyar, A. *Measuring Scientific Question Formation: Discovery Complexity, Representational Change, and a Reproducible Research Protocol*. Manuscript.
 
 Source-specific links and immutable source identifiers accompany the relevant input and analysis files.
+
+The separately archived datasets are not mirrored in full. If a named upstream archive cannot be obtained, the corresponding analysis should be treated as not independently reproducible from this GitHub repository alone.
